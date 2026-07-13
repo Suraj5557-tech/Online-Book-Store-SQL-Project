@@ -55,12 +55,12 @@ COPY BOOKS (
 	STOCK
 )
 FROM
-	'C:\Users\Public\Books.csv' CSV HEADER;
+	'Books.csv' CSV HEADER;
 
 -- Import data into customers Table.
 COPY CUSTOMERS (CUSTOMER_ID, NAME, EMAIL, PHONE, CITY, COUNTRY)
 FROM
-	'C:\Users\Public\Customers.csv' CSV HEADER;
+	'Customers.csv' CSV HEADER;
 
 -- Import data into Orders table.
 COPY ORDERS (
@@ -72,7 +72,7 @@ COPY ORDERS (
 	TOTAL_AMOUNT
 )
 FROM
-	'C:\Users\Public\Orders.csv' CSV HEADER;
+	'Orders.csv' CSV HEADER;
 
 -- 1) Retrive all books in the "Fiction" genre.
 SELECT
